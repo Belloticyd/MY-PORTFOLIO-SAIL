@@ -1,0 +1,224 @@
+
+/* Below code is used to style the about div element */
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 170px;
+}
+
+/* Below code is used to style the about-title div element inside th about div element */
+.about-title{
+    position: relative;
+}
+
+/* Below code is used to style  h1 element inside the about-title div element */
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* Below code is used to style  img element inside the about-title div element  */
+
+.about-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Below code is used to style the about-sessions div element inside th about div element */
+.about-sessions{
+    display: flex;
+    gap: 80px;
+}
+
+/*  Below code is used to style the about-left div inside the  about-sessions div element  */
+
+.about-left img{
+    height: 400px;
+    width: 400px;
+}
+
+/*  Below code is used to style the about-right div inside the  about-sessions div element  */
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/*  Below code is used to style the about-para div inside the  about-right div element  */
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    /* font-weight: 200; */
+
+    /*  Below code is used to style the p element inside the  about-paradiv element  */
+    p{
+        text-indent: 50px;
+        text-align: justify;
+
+        span{
+            background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+    }
+}
+
+/*  Below code is used to style the about-skills div element inside the  about-right div element  */
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*  Below code is used to style the aboutSkill div element inside the  about-skills div element  */
+.aboutSkill{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: .5s;
+
+    /*  Below code is used to style the p element inside the aboutSkill  div element  */
+    p{
+        min-width: 150px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /*  Below code is used to style the p element inside the aboutSkill  div element  */
+    hr{
+        outline: none;
+        border: none;
+        width: 50%;
+        height: 10px;
+        border-radius: 50px;
+        background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+    }
+
+    /*  Below code is used to style the hover on aboutSkill element inside the aboutSkill  div element  */
+    &:hover{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+}
+
+/*  Below code is used to style the about-achievements div element inside the  about div element  */
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+/*  Below code is used to style the about-achievement div element inside the  about-achievements div element  */
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: .5s;
+
+    /*  Below code is used to style the h1 element inside the  about-achievement div element  */
+    h1{
+        font-size: 60px;
+        font-weight: 600;
+        background: linear-gradient(270deg,  #df8908 50.41%, #b415ff 90.25%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        sup{
+            font-size: 24px;
+            font-weight: 800;
+        }
+    }
+
+    p{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    /*  Below code is used to style the hover pesudo element on the  about-achievement div element  */
+    &:hover{
+        transform: scale(1.12);
+        transition: .5s;
+    }
+}
+
+/* Below code is the media query */
+/* 1St Mobile responsive Start Here */
+@media(max-width:768px) {
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .about-title{
+        h1{
+            font-size: 50px;
+            padding: 0;
+            text-align: center;
+        }
+
+        img{
+            width: 130px;
+            right: -20px;
+        }
+    }
+
+    .about-sessions{
+        flex-direction: column;
+
+        .about-right{
+            .about-para{
+                font-style: 18px;
+                line-height: 32px;
+            }
+
+            .about-skill{
+                gap: 20px;
+                align-items: center;
+
+                p{
+                    font-size: 20px;
+                }
+
+                hr{
+                    height: 6px;
+                }
+            }
+        }
+    }
+
+    .about-achievements{
+        flex-direction: column;
+        justify-content: space-between;
+
+        .about-achievement{
+            gap: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+   
+            h1{
+                font-size: 64px;
+                font-weight: 700;
+            }
+
+            p{
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+    }
+}
+/* 1St Mobile responsive End Here */
