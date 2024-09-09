@@ -178,15 +178,19 @@
 
     .about-sessions{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .about-right{
             .about-para{
                 font-style: 18px;
                 line-height: 32px;
+                margin-right: 100px;
+                text-align: center;
             }
 
             .about-skill{
-                gap: 20px;
+                gap: 10px;
                 align-items: center;
 
                 p{
@@ -195,7 +199,9 @@
 
                 hr{
                     height: 6px;
+                    margin-right: 100px;
                 }
+                
             }
         }
     }

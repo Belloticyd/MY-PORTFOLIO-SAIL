@@ -24,6 +24,7 @@ const Mywork = () => {
         <div><a href="https://belloticyd.github.io/PhummitteStore/"><img src="/img/project_11.JPG" alt="" /></a></div>
         <div><a href="https://belloticyd.github.io/HeroPage/"><img src="/img/HeroPage.JPG" alt="" /></a></div>
         <div><a href="https://belloticyd.github.io/Social-Link/"><img src="/img/SocialLink.JPG" alt="" /></a></div>
+        <div><a href="https://social-media-dashbroad.vercel.app/"><img src="/img/SocialMediaDashbroad.JPG" alt="" /></a></div>
         {/* Below code is used to import the mywork data to display using map method */}
         {mywork_data.map((work, index) =>{
           return <img key={index} src={work.w_img} alt="" />
